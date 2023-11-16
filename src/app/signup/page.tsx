@@ -24,7 +24,7 @@ export default function Signup() {
             console.log("Signup success ", response.data);
             router.push('/login');
 
-        } catch (error) {
+        } catch (error: any) {
             console.log("Singup failed: ", error.message);
             toast.error(error.message);
         } finally {
